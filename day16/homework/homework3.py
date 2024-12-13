@@ -1,14 +1,14 @@
-correct_password = "tatuka_2008"
-correct_username = "tatomchedlidze"
-user_guess = input("Enter password: ")
-user_guess = input("Enter username: ")
+correct_password = "1234"
+correct_username = "tato"
+
+user_guess1 = input("Enter password: ")
+user_guess2 = input("Enter username: ")
+
 counter = 0
 
-while user_guess != correct_password or correct_username:
-    user_guess = input("Enter password: ")
-    user_guess = input("Enter username: ")
-    counter += 1
-
-
+while (user_guess1 != correct_password) or (user_guess2 != correct_username):
+    user_guess1 = input("Enter password: ")
+    user_guess2 = input("Enter username: ")
+    counter += 1 
 print("Access granted")
 print("Your guess count:", str(counter))
